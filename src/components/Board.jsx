@@ -1,6 +1,5 @@
 import React from "react";
-import { HexGrid, Layout, Hexagon, Text, Pattern } from "react-hexgrid";
-import "./Board.css";
+import { HexGrid, Layout, Hexagon, Text } from "react-hexgrid";
 
 const getBackgroundColor = (resource) => {
   switch (resource) {
@@ -21,6 +20,7 @@ const getBackgroundColor = (resource) => {
   }
 };
 
+//next step is to have this be added in from the backend
 const hexData = [
   { resource: 3, value: 5, q: -2, r: 0, s: 2 },
   { resource: 3, value: 2, q: -2, r: 1, s: 1 },
@@ -58,9 +58,7 @@ const Board = () => {
               strokeWidth: 0.5,
             }}
           >
-            <Text
-              style={{ fontSize: "4px", color: "#ffffff" }}
-            >{`${value}`}</Text>
+            <Text style={{ fontSize: "4px" }}>{`${value}`}</Text>
           </Hexagon>
         ))}
       </Layout>

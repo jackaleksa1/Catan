@@ -4,7 +4,7 @@ import Board from "./components/Board";
 const App = () => {
   return (
     <div>
-      <h1>Catan Board</h1>
+      <h1>Catan</h1>
       <Board />
     </div>
   );
