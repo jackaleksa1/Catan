@@ -1,0 +1,27 @@
+.hex-tile {
+    position: absolute;
+    width: 100px;
+    height: 115px;
+    background-color: lightgrey;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hex-content {
+    text-align: center;
+  }
+  
+  .hexagon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .hex-tile p {
+    margin: 0;
+  }
